@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page | Level 1 Task 2</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      line-height:1.6;
+      background:#f8fafc;
+      color:#0f172a;
+    }
+
+    /* ===== Navbar ===== */
+    header{
+      background:#1e3a8a;
+      padding:15px 40px;
+      color:#fff;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav h2{
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:20px;
+    }
+
+    nav ul li a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero{
+      padding:80px 40px;
+      text-align:center;
+      background:linear-gradient(to right,#1e3a8a,#2563eb);
+      color:#fff;
+    }
+
+    .hero h1{
+      font-size:2.8rem;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:0 auto 30px;
+      font-size:1.1rem;
+    }
+
+    .hero a{
+      padding:12px 30px;
+      background:#fff;
+      color:#1e3a8a;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:600;
+    }
+
+    /* ===== Features Section ===== */
+    .features{
+      padding:70px 40px;
+      text-align:center;
+    }
+
+    .features h2{
+      margin-bottom:40px;
+      color:#1e3a8a;
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .feature{
+      background:#fff;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* ===== About Section ===== */
+    .about{
+      background:#e5e7eb;
+      padding:70px 40px;
+      text-align:center;
+    }
+
+    .about h2{
+      margin-bottom:20px;
+      color:#1e3a8a;
+    }
+
+    .about p{
+      max-width:800px;
+      margin:auto;
+    }
+
+    /* ===== Footer ===== */
+    footer{
+      background:#020617;
+      color:#cbd5f5;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:600px){
+      .hero h1{
+        font-size:2.2rem;
+      }
+      nav ul{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h2>Landing Page</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to My Landing Page</h1>
+    <p>
+      This landing page is a beginner-friendly web development project built using HTML and CSS.
+      It demonstrates layout design, sectioning, alignment, and styling techniques.
+    </p>
+    <a href="#features">Get Started</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>What You Will Learn</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>HTML Structure</h3>
+        <p>Learn how to divide a page into sections like header, content, and footer.</p>
+      </div>
+      <div class="feature">
+        <h3>CSS Styling</h3>
+        <p>Use colors, padding, margins, and fonts to create an attractive design.</p>
+      </div>
+      <div class="feature">
+        <h3>Layout Design</h3>
+        <p>Arrange items using flexbox and grid for responsive layouts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About This Project</h2>
+    <p>
+      A landing page project allows beginners to apply HTML and CSS skills in a practical way.
+      It encourages creativity while teaching proper alignment, spacing, color selection,
+      and responsive design to ensure a clean and user-friendly interface.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Landing Page Project | Level 1 Task 2</p>
+  </footer>
+
+</body>
+</html>
